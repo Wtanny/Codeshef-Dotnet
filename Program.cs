@@ -4,55 +4,44 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HomeWork
+namespace CodeChefPrograms
 {
-    internal class Program
+    public  class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            //factorial of number
-            /*Factorial  f = new Factorial();
-            f.fac();*/
+            //DuplicateNumber d = new DuplicateNumber();
+            //int[] arr = { 1, 2, 3, 4, 2, 5, 6, 3, 7, 8, 9, 1 };
 
-            //leapyear
-            /*LeapYear l =  new LeapYear();
-            l.year();*/
+            //Console.WriteLine("Duplicate values in the array:");
+            //d.FindDuplicates(arr);
 
-            //pascal triangle
-            /*Pascal p = new Pascal();
-            p.triangle();*/
+            //DuplicateName d1 = new DuplicateName();
+            //d1.method1();
 
-            //Binary triangle
-            /*BinaryTri b = new BinaryTri();
-            b.bin();*/
+            //Vowels v = new Vowels();
+            //    string inputString = "Hello, how are you?";
 
-            //Diamond pattern
-            /* Diamond d = new Diamond();
-             d.pattern();*/
-            //-------------------------------------
+            //    int vowelCount = v.CountVowels(inputString);
 
-            //GCD
-            /*Program1 p  = new Program1();
-            p.gcd();*/
+            //    Console.WriteLine($"Number of vowels in the string: {vowelCount}");
 
-            //LCM
+            //SumOfTrianglesAngle st = new SumOfTrianglesAngle();
+            //st.sumFunction();
 
+            //TriangleEquality t = new TriangleEquality();
+            //t.checkFun();
 
-            //armstrong
-            //Program2 p = new Program2();
-            //p.armstrong();
+            //EmpSorting.sortingFun();
 
-            //Reverse string
-            //RevString rs = new RevString();
-            //rs.str();
+            //MinMaxSalary.salaryFind();
 
-            //palindrone
-            Palindron p = new Palindron();
-            p.check();
+            //DateConvert.function();
 
+            //LeapYear.leapYear();
 
+            //FindAge.ageFind();
 
-
-        }
+        }         
     }
-}
+ }

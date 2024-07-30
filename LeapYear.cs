@@ -4,17 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HomeWork
+namespace CodeChefPrograms
 {
     internal class LeapYear
     {
-        public void year()
+        public static void leapYear()
         {
-            Console.WriteLine("Enter Year : ");
-            int Year = int.Parse(Console.ReadLine());
-            if (((Year % 4 == 0) && (Year % 100 != 0)) || (Year % 400 == 0)) Console.WriteLine("{0} is a Leap Year.", Year);
-            else Console.WriteLine("{0} is not a Leap Year.", Year);
-            Console.ReadLine();
+            Console.WriteLine("Enter a date (yyyy-MM-dd format):");
+            string input = Console.ReadLine();
+
+            if (DateTime.TryParse(input, out DateTime date))
+            {
+                int year = date.Year;
+                int month = date.Month;
+
+                bool isLeapYear = DateTime.IsLeapYear(year);
+
+                Console.WriteLine($"\nYear: {year}");
+                Console.WriteLine($"Month: {month}");
+                Console.WriteLine($"Leap Year: {(isLeapYear ? "Yes" : "No")}");
+            }
+            else
+            {
+                Console.WriteLine("Invalid date format. Please enter date in yyyy-MM-dd format.");
+            }
         }
     }
 }
